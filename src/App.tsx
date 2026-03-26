@@ -96,7 +96,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-base-200 font-(--font-body)">
+    <div className="min-h-screen bg-base-200 font-sans">
       <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-4 px-4 py-8 sm:px-6 lg:px-8">
         <section className="card w-full border border-base-300 bg-base-100 shadow-sm">
           <div className="card-body gap-6">
@@ -271,7 +271,7 @@ export default function App() {
                 <div className="w-full">
                   <textarea
                     aria-label="Original JSON input"
-                    className="textarea min-h-96 w-full font-(--font-mono) text-sm"
+                    className="textarea min-h-96 w-full font-mono text-sm"
                     value={inputText}
                     onChange={(event) => setInputText(event.target.value)}
                     spellCheck={false}
@@ -298,7 +298,7 @@ export default function App() {
                 <div className="w-full">
                   <textarea
                     aria-label="Sanitized JSON output"
-                    className="textarea min-h-96 w-full font-(--font-mono) text-sm"
+                    className="textarea min-h-96 w-full font-mono text-sm"
                     value={outputText}
                     readOnly
                     spellCheck={false}

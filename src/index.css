@@ -6,13 +6,9 @@
 @import "@fontsource/ubuntu-mono/700.css";
 @plugin "daisyui";
 
-:root {
-  --font-body: "Poppins", sans-serif;
+@theme {
+  --font-sans: "Poppins", sans-serif;
   --font-mono: "Ubuntu Mono", monospace;
-}
-
-body {
-  font-family: var(--font-body);
 }
 
 @plugin "daisyui/theme" {
