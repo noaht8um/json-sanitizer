@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/ubuntu-mono/400.css";
+@import "@fontsource/ubuntu-mono/700.css";
+@plugin "daisyui";
+
+:root {
+  --font-body: "Poppins", sans-serif;
+  --font-mono: "Ubuntu Mono", monospace;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+@plugin "daisyui/theme" {
+  name: "sanitizer";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+
+  --color-base-100: oklch(98% 0.01 200);
+  --color-base-200: oklch(95% 0.018 200);
+  --color-base-300: oklch(90% 0.03 200);
+  --color-base-content: oklch(24% 0.03 220);
+
+  --color-primary: oklch(75% 0.12 210);
+  --color-primary-content: oklch(18% 0.03 220);
+
+  --color-secondary: oklch(85% 0.06 195);
+  --color-secondary-content: oklch(22% 0.03 220);
+
+  --color-accent: oklch(38% 0.07 215);
+  --color-accent-content: oklch(96% 0.01 200);
+
+  --color-neutral: oklch(30% 0.02 220);
+  --color-neutral-content: oklch(97% 0.01 200);
+
+  --color-info: oklch(74% 0.1 220);
+  --color-info-content: oklch(20% 0.03 220);
+
+  --color-success: oklch(72% 0.11 165);
+  --color-success-content: oklch(22% 0.03 165);
+
+  --color-warning: oklch(80% 0.14 85);
+  --color-warning-content: oklch(28% 0.04 70);
+
+  --color-error: oklch(68% 0.19 25);
+  --color-error-content: oklch(97% 0.01 25);
+
+  --radius-selector: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "sanitizer-dark";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+
+  --color-base-100: oklch(26% 0.01 260);
+  --color-base-200: oklch(22% 0.01 260);
+  --color-base-300: oklch(18% 0.01 260);
+  --color-base-content: oklch(92% 0.015 200);
+
+  --color-primary: oklch(75% 0.12 210);
+  --color-primary-content: oklch(18% 0.03 220);
+
+  --color-secondary: oklch(85% 0.06 195);
+  --color-secondary-content: oklch(22% 0.03 220);
+
+  --color-accent: oklch(63% 0.1 205);
+  --color-accent-content: oklch(15% 0.02 220);
+
+  --color-neutral: oklch(14% 0.01 260);
+  --color-neutral-content: oklch(92% 0.015 200);
+
+  --color-info: oklch(74% 0.1 220);
+  --color-info-content: oklch(18% 0.03 220);
+
+  --color-success: oklch(72% 0.11 165);
+  --color-success-content: oklch(18% 0.03 165);
+
+  --color-warning: oklch(80% 0.14 85);
+  --color-warning-content: oklch(22% 0.04 70);
+
+  --color-error: oklch(68% 0.19 25);
+  --color-error-content: oklch(18% 0.03 25);
+
+  --radius-selector: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}

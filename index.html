@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Sanitize JSON values before sharing them, publishing examples, or pasting them into an LLM. Keep the structure, replace the sensitive values."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://www.jsonsanitizer.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JSON Sanitizer" />
+    <meta property="og:title" content="JSON Sanitizer" />
+    <meta
+      property="og:description"
+      content="Sanitize JSON values before sharing them, publishing examples, or pasting them into an LLM. Keep the structure, replace the sensitive values."
+    />
+    <meta property="og:url" content="https://www.jsonsanitizer.com/" />
+    <meta property="og:image" content="https://www.jsonsanitizer.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="JSON Sanitizer social preview showing original and sanitized JSON side by side."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JSON Sanitizer" />
+    <meta
+      name="twitter:description"
+      content="Sanitize JSON values before sharing them, publishing examples, or pasting them into an LLM. Keep the structure, replace the sensitive values."
+    />
+    <meta name="twitter:image" content="https://www.jsonsanitizer.com/og.png" />
+    <meta
+      name="twitter:image:alt"
+      content="JSON Sanitizer social preview showing original and sanitized JSON side by side."
+    />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#e1f2f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#181b1f" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Sanitizer</title>
+    <script>
+      (() => {
+        const lightTheme = 'sanitizer';
+        const darkTheme = 'sanitizer-dark';
+        const themeStorageKey = 'jsonsanitizer-theme';
+        const storedTheme = window.localStorage.getItem(themeStorageKey);
+        const theme =
+          storedTheme === lightTheme || storedTheme === darkTheme
+            ? storedTheme
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? darkTheme
+              : lightTheme;
+
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
