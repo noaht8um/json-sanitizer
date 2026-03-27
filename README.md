@@ -4,6 +4,8 @@
 
 Sanitize JSON values before you share them, paste them into an LLM, or post them publicly.
 
+Published at: https://www.jsonsanitizer.com
+
 - Runs entirely in the browser
 - Keeps your JSON shape intact
 - Supports a few array handling modes
