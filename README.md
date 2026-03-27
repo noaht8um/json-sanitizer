@@ -1,5 +1,7 @@
 # JSON Sanitizer
 
+![Open Graph image](public/og.png)
+
 Sanitize JSON values before you share them, paste them into an LLM, or post them publicly.
 
 - Runs entirely in the browser
